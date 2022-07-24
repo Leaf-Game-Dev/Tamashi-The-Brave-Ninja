@@ -54,10 +54,10 @@ public class StandingState: State
         {
             jump = true;
 		}
-		if (crouchAction.triggered)
+		/*if (crouchAction.triggered)
 		{
             crouch = true;
-		}
+		}*/
 
 
 /*		if (drawWeaponAction.triggered)
