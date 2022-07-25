@@ -19,6 +19,7 @@ public class State
     public InputAction attackAction;
     public InputAction dashAction;
 
+
     public State(Character _character, StateMachine _stateMachine)
 	{
         character = _character;
@@ -31,9 +32,7 @@ public class State
         sprintAction = character.playerInput.actions["Sprint"];
         sprintReleaseAction = character.playerInput.actions["SprintRelease"];
         dashAction = character.playerInput.actions["Dash"];
-
-        //attackAction = character.playerInput.actions["Attack"];
-
+        attackAction = character.playerInput.actions["Attack"];
     }
 
     public virtual void Enter()

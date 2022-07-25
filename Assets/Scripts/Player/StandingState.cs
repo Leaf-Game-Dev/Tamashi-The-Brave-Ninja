@@ -5,7 +5,7 @@ public class StandingState: State
     float gravityValue;
     bool jump;
     bool dash;
-    bool crouch;
+    bool attack;
     Vector3 currentVelocity;
     bool grounded;
     float playerSpeed;
@@ -30,7 +30,7 @@ public class StandingState: State
 
         jump = false;
         dash = false;
-        crouch = false;
+        attack = false;
         GroundCheck = true;
         //drawWeapon = false;
         falling = false;
@@ -57,9 +57,14 @@ public class StandingState: State
             jump = true;
 		}
 
-        if (dashAction.triggered)
+        if (dashAction.triggered&& GroundCheck)
         {
             dash = true;
+        }
+        
+        if (attackAction.triggered&& GroundCheck)
+        {
+            attack = true;
         }
 
 
@@ -90,6 +95,22 @@ public class StandingState: State
 		{
             stateMachine.ChangeState(character.dashing);
         }
+        if (attack)
+		{
+            stateMachine.ChangeState(character.attacking);
+        }
+
+        if (!GroundCheck && !falling)
+        {
+            character.animator.SetTrigger("fall");
+            falling = true;
+        }
+        else if(GroundCheck && falling)
+        {
+            falling = false;
+            character.animator.SetTrigger("move");
+        }
+
         timePassed += Time.deltaTime;
     }
 
@@ -141,7 +162,7 @@ public class StandingState: State
         RaycastHit hit;
 
         Vector3 direction = targetPositon - character.transform.position;
-        if (Physics.Raycast(character.transform.position, direction, out hit, character.normalColliderHeight+2, layerMask))
+        if (Physics.Raycast(character.transform.position, direction, out hit, character.normalColliderHeight/4, layerMask))
         {
             Debug.DrawRay(character.transform.position, direction * hit.distance, Color.yellow);
             return true;

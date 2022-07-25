@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Character : MonoBehaviour
 {
+    public Transform Mesh; 
     [Header("Controls")]
     public float playerSpeed = 5.0f;
     public float crouchSpeed = 2.0f;
@@ -29,6 +30,9 @@ public class Character : MonoBehaviour
     public float DashSpeed;
     public float DashTime;
 
+    [Header("Attack Settings")]
+    public float AttackTimings = .5f;
+
     [HideInInspector] public StateMachine movementSM;
     public StandingState standing;
     public JumpingState jumping;
@@ -37,8 +41,8 @@ public class Character : MonoBehaviour
     public LandingState landing;
 
     //public SprintJumpState sprintjumping;
-/*    public CombatState combatting;
-    public AttackState attacking;*/
+/*    public CombatState combatting;*/
+    public AttackState attacking;
 
     [HideInInspector]
     public float gravityValue = -9.81f;
@@ -75,6 +79,7 @@ public class Character : MonoBehaviour
         dashing = new DashState(this, movementSM);
         crouching = new CrouchingState(this, movementSM);
         landing = new LandingState(this, movementSM);
+        attacking = new AttackState(this, movementSM);
 
 
         movementSM.Initialize(standing);
@@ -102,6 +107,8 @@ public class Character : MonoBehaviour
     private void Constrains()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y, Initz);
+        //Mesh.rotation = transform.rotation;
+        Mesh.transform.position = transform.position;
     }
 
 }
