@@ -17,6 +17,7 @@ public class State
     public InputAction sprintAction;
     public InputAction sprintReleaseAction;
     public InputAction attackAction;
+    public InputAction dashAction;
 
     public State(Character _character, StateMachine _stateMachine)
 	{
@@ -29,6 +30,8 @@ public class State
         crouchAction = character.playerInput.actions["Crouch"];
         sprintAction = character.playerInput.actions["Sprint"];
         sprintReleaseAction = character.playerInput.actions["SprintRelease"];
+        dashAction = character.playerInput.actions["Dash"];
+
         //attackAction = character.playerInput.actions["Attack"];
 
     }

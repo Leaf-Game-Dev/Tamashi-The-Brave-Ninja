@@ -3,7 +3,8 @@ using UnityEngine;
 public class StandingState: State
 {  
     float gravityValue;
-    bool jump;   
+    bool jump;
+    bool dash;
     bool crouch;
     Vector3 currentVelocity;
     bool grounded;
@@ -28,6 +29,7 @@ public class StandingState: State
         base.Enter();
 
         jump = false;
+        dash = false;
         crouch = false;
         GroundCheck = true;
         //drawWeapon = false;
@@ -54,21 +56,22 @@ public class StandingState: State
         {
             jump = true;
 		}
-		/*if (crouchAction.triggered)
-		{
-            crouch = true;
-		}*/
+
+        if (dashAction.triggered)
+        {
+            dash = true;
+        }
 
 
-/*		if (drawWeaponAction.triggered)
-		{
-            drawWeapon = true;
-        }*/
+        /*		if (drawWeaponAction.triggered)
+                {
+                    drawWeapon = true;
+                }*/
 
         input = moveAction.ReadValue<Vector2>();
         velocity = new Vector3(input.x, 0,0);
 
-        velocity = velocity.x * character.cameraTransform.right.normalized + velocity.z * character.cameraTransform.forward.normalized;
+        velocity = velocity.x * character.cameraTransform.right.normalized;// + velocity.z * character.cameraTransform.forward.normalized;
         velocity.y = 0f;
      
     }
@@ -83,9 +86,9 @@ public class StandingState: State
         {
             stateMachine.ChangeState(character.jumping);
         }
-		if (crouch)
+		if (dash)
 		{
-            stateMachine.ChangeState(character.crouching);
+            stateMachine.ChangeState(character.dashing);
         }
         timePassed += Time.deltaTime;
     }
@@ -113,7 +116,7 @@ public class StandingState: State
   
 		if (velocity.sqrMagnitude>0)
 		{
-            character.transform.rotation = Quaternion.Slerp(character.transform.rotation, Quaternion.LookRotation(velocity),character.rotationDampTime);
+            character.transform.rotation = Quaternion.LookRotation(velocity);//Quaternion.Slerp(character.transform.rotation, Quaternion.LookRotation(velocity),character.rotationDampTime);
         }
         
     }

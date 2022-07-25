@@ -26,10 +26,9 @@ public class JumpingState:State
         jumpHeight = character.jumpHeight;
         playerSpeed = character.playerSpeed;
         gravityVelocity.y = 0;
-
+        doublejumped = false;
         //character.controller.height = character.JumpColliderHeight;
         //character.controller.center = new Vector3(0f, 1 , 0f);
-
         character.animator.SetFloat("speed", 0);
         character.animator.SetTrigger("jump");
         Jump();
@@ -46,25 +45,28 @@ public class JumpingState:State
 	{
 		base.HandleInput();
 
-
-
-
         input = moveAction.ReadValue<Vector2>();
         velocity = new Vector3(input.x, 0, 0);
 
-        velocity = velocity.x * character.cameraTransform.right.normalized + velocity.z * character.cameraTransform.forward.normalized;
+        velocity = velocity.x * character.cameraTransform.right.normalized;// + velocity.z * character.cameraTransform.forward.normalized;
         velocity.y = 0f;
     }
-
+    bool doublejumped;
 	public override void LogicUpdate()
     {
         base.LogicUpdate();
 
         if (grounded)
 		{
-
             stateMachine.ChangeState(character.landing);
         }
+
+        if (jumpAction.triggered && !doublejumped)
+        {
+            Jump();
+            doublejumped = true;
+        }
+
     }
 
     public override void PhysicsUpdate()
@@ -85,7 +87,7 @@ public class JumpingState:State
 
             if (velocity.magnitude > 0)
             {
-                character.transform.rotation = Quaternion.Slerp(character.transform.rotation, Quaternion.LookRotation(velocity), character.rotationDampTime);
+                character.transform.rotation = Quaternion.LookRotation(velocity);//Quaternion.Slerp(character.transform.rotation, , character.rotationDampTime);
             }
 
         }
@@ -94,9 +96,9 @@ public class JumpingState:State
         grounded = character.controller.isGrounded;
     }
 
-    void Jump()
+    void Jump(float additional = 0)
     {
-        gravityVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        gravityVelocity.y = Mathf.Sqrt((jumpHeight+additional) * -3.0f * gravityValue);
     }
 
 }

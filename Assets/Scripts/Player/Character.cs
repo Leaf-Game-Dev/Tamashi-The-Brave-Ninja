@@ -25,10 +25,14 @@ public class Character : MonoBehaviour
     [Range(0, 1)]
     public float airControl = 0.5f;
 
+    [Header("Dash settings")]
+    public float DashSpeed;
+    public float DashTime;
+
     [HideInInspector] public StateMachine movementSM;
     public StandingState standing;
     public JumpingState jumping;
-    //public FallState Falling;
+    public DashState dashing;
     public CrouchingState crouching;
     public LandingState landing;
 
@@ -51,7 +55,12 @@ public class Character : MonoBehaviour
     [HideInInspector]
     public Vector3 playerVelocity;
 
+    float Initz;
 
+    private void Awake()
+    {
+        Initz = transform.position.z;
+    }
     // Start is called before the first frame update
     private void Start()
     {
@@ -63,6 +72,7 @@ public class Character : MonoBehaviour
         movementSM = new StateMachine();
         standing = new StandingState(this, movementSM);
         jumping = new JumpingState(this, movementSM);
+        dashing = new DashState(this, movementSM);
         crouching = new CrouchingState(this, movementSM);
         landing = new LandingState(this, movementSM);
 
@@ -78,10 +88,20 @@ public class Character : MonoBehaviour
         movementSM.currentState.HandleInput();
 
         movementSM.currentState.LogicUpdate();
+
     }
 
     private void FixedUpdate()
     {
         movementSM.currentState.PhysicsUpdate();
+
+        Constrains();
+
     }
+
+    private void Constrains()
+    {
+        transform.position = new Vector3(transform.position.x, transform.position.y, Initz);
+    }
+
 }
