@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     public float crouchColliderHeight = 1.35f;
     public float JumpColliderHeight = 1.35f;
     public float LandDelay = 0.75f;
-
+    public float GroundCheckDisnatce = 0.3f;
 
 
     [Header("Animation Smoothing")]
@@ -43,6 +43,8 @@ public class Character : MonoBehaviour
     //public SprintJumpState sprintjumping;
 /*    public CombatState combatting;*/
     public AttackState attacking;
+    public ShurikenState shooting;
+
 
     [HideInInspector]
     public float gravityValue = -9.81f;
@@ -80,7 +82,7 @@ public class Character : MonoBehaviour
         crouching = new CrouchingState(this, movementSM);
         landing = new LandingState(this, movementSM);
         attacking = new AttackState(this, movementSM);
-
+        shooting = new ShurikenState(this, movementSM);
 
         movementSM.Initialize(standing);
 

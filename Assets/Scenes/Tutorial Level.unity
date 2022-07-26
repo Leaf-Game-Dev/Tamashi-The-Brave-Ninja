@@ -11528,7 +11528,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778828, y: 1}
+    m_SensorSize: {x: 1.7789757, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11545,7 +11545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027380712}
   m_LocalRotation: {x: 0.10452846, y: 0, z: 0, w: 0.9945219}
-  m_LocalPosition: {x: 0, y: 4.435, z: -6}
+  m_LocalPosition: {x: 0, y: 5.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11790,7 +11790,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.5
+    m_Strength: 0.739
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -15230,7 +15230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496161201}
   m_LocalRotation: {x: 0.10452846, y: 0, z: 0, w: 0.9945219}
-  m_LocalPosition: {x: 0, y: 4.435, z: -6}
+  m_LocalPosition: {x: 0, y: 5.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19744,7 +19744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 4, z: -6}
+  m_FollowOffset: {x: 0, y: 4.805, z: -10}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -20120,18 +20120,20 @@ MonoBehaviour:
   playerSpeed: 5
   crouchSpeed: 2
   sprintSpeed: 7
-  jumpHeight: 1.5
+  jumpHeight: 1
   gravityMultiplier: 3
   rotationSpeed: 5
   crouchColliderHeight: 1.35
   JumpColliderHeight: 1.35
   LandDelay: 0
+  GroundCheckDisnatce: 0.3
   speedDampTime: 0.1
   velocityDampTime: 0.1
   rotationDampTime: 0.2
   airControl: 0
   DashSpeed: 20
   DashTime: 0.25
+  AttackTimings: 0.5
   gravityValue: -9.81
   normalColliderHeight: 0
   controller: {fileID: 0}

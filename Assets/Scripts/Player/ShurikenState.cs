@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackState : State
+public class ShurikenState : State
 {
-    int attackindex;
-    public AttackState(Character _character, StateMachine _stateMachine) : base(_character, _stateMachine)
+    public ShurikenState(Character _character, StateMachine _stateMachine) : base(_character, _stateMachine)
     {
         character = _character;
         stateMachine = _stateMachine;
@@ -14,11 +13,7 @@ public class AttackState : State
     public override void Enter()
     {
         base.Enter();
-        attackindex++;
-        attackindex = attackindex % 3;
-        Debug.Log(attackindex);
-        character.animator.SetInteger("AttackIndex", attackindex);
-        character.animator.SetTrigger("Attack");
+        character.animator.SetTrigger("shootShuriken");
         character.StartCoroutine(EndState());
     }
 

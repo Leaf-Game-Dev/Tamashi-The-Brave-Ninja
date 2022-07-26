@@ -17,6 +17,8 @@ public class State
     public InputAction sprintAction;
     public InputAction sprintReleaseAction;
     public InputAction attackAction;
+    public InputAction shootAction;
+
     public InputAction dashAction;
 
 
@@ -33,6 +35,7 @@ public class State
         sprintReleaseAction = character.playerInput.actions["SprintRelease"];
         dashAction = character.playerInput.actions["Dash"];
         attackAction = character.playerInput.actions["Attack"];
+        shootAction = character.playerInput.actions["shoot"];
     }
 
     public virtual void Enter()

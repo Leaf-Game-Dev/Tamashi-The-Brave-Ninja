@@ -6,6 +6,7 @@ public class StandingState: State
     bool jump;
     bool dash;
     bool attack;
+    bool shoot;
     Vector3 currentVelocity;
     bool grounded;
     float playerSpeed;
@@ -30,6 +31,7 @@ public class StandingState: State
 
         jump = false;
         dash = false;
+        shoot = false;
         attack = false;
         GroundCheck = true;
         //drawWeapon = false;
@@ -52,7 +54,7 @@ public class StandingState: State
     {
         base.HandleInput();
 
-        if (jumpAction.triggered && timePassed > landingTime)
+        if (jumpAction.triggered && timePassed > landingTime && GroundCheck)
         {
             jump = true;
 		}
@@ -67,6 +69,10 @@ public class StandingState: State
             attack = true;
         }
 
+        if(shootAction.triggered && GroundCheck)
+        {
+            shoot = true;
+        }
 
         /*		if (drawWeaponAction.triggered)
                 {
@@ -98,6 +104,11 @@ public class StandingState: State
         if (attack)
 		{
             stateMachine.ChangeState(character.attacking);
+        }
+
+        if (shoot)
+        {
+            stateMachine.ChangeState(character.shooting);
         }
 
         if (!GroundCheck && !falling)
@@ -160,16 +171,30 @@ public class StandingState: State
         int layerMask = 1 << 8;
         layerMask = ~layerMask;
         RaycastHit hit;
+        RaycastHit hit2;
+
 
         Vector3 direction = targetPositon - character.transform.position;
-        if (Physics.Raycast(character.transform.position, direction, out hit, character.normalColliderHeight/4, layerMask))
+        Vector3 ray1Pos = new Vector3( character.transform.position.x + character.GroundCheckDisnatce, character.transform.position.y, character.transform.position.z);
+        Vector3 ray2Pos = new Vector3(character.transform.position.x - character.GroundCheckDisnatce, character.transform.position.y, character.transform.position.z);
+
+        bool ray1 = Physics.Raycast(ray1Pos, direction, out hit, character.normalColliderHeight / 4, layerMask);
+        bool ray2 = Physics.Raycast(ray2Pos, direction, out hit2, character.normalColliderHeight / 4, layerMask);
+
+        if (ray2|| ray1)
         {
-            Debug.DrawRay(character.transform.position, direction * hit.distance, Color.yellow);
+            if (ray1) Debug.DrawRay(ray1Pos, direction * hit.distance, Color.yellow);
+            else Debug.DrawRay(ray1Pos, direction * character.normalColliderHeight / 4, Color.white);
+            if (ray2) Debug.DrawRay(ray2Pos, direction * hit2.distance, Color.yellow);
+            else Debug.DrawRay(ray2Pos, direction * character.normalColliderHeight / 4, Color.white);
+
             return true;
         }
         else
         {
-            Debug.DrawRay(character.transform.position, direction * character.normalColliderHeight, Color.white);
+            Debug.DrawRay(ray1Pos, direction * character.normalColliderHeight / 4, Color.white);
+            Debug.DrawRay(ray2Pos, direction * character.normalColliderHeight / 4, Color.white);
+
             return false;
         }
     }
