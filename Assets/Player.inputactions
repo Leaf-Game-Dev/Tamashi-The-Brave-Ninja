@@ -69,12 +69,21 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "ComboAttack",
+                    "type": "Button",
+                    "id": "f46b1322-d4a4-47bb-9c0b-b854af188fa5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "MultiTap(tapTime=0.1,tapDelay=0.1,pressPoint=0.1)",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Attack",
                     "type": "Button",
                     "id": "162f0af7-23ad-4fcb-b4ab-25562e9e50bb",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "MultiTap(tapTime=0.5,tapCount=1)",
                     "initialStateCheck": false
                 },
                 {
@@ -228,6 +237,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "29f85556-ab43-48b4-9332-a834c0f86021",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ComboAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

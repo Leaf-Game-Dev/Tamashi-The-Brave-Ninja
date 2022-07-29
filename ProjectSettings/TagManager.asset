@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collide
   - Shadow
+  - EnemyCollider
   layers:
   - Default
   - TransparentFX
@@ -16,11 +17,11 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TentacleCollider
+  - Tentacle
+  - Enemy
+  - EnemyCollider
+  - PlayerCollider
   - 
   - 
   - 

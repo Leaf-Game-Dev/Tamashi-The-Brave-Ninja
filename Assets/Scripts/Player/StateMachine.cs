@@ -18,3 +18,24 @@ public class StateMachine
 
     
 }
+
+public class EnemyStateMachine
+{
+    public EnemyState currentState;
+
+    public void Initialize(EnemyState startingState)
+    {
+        currentState = startingState;
+        startingState.Enter();
+    }
+
+    public void ChangeState(EnemyState newState)
+    {
+        currentState.Exit();
+
+        currentState = newState;
+        newState.Enter();
+    }
+
+
+}

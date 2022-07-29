@@ -20,7 +20,7 @@ public class DashState : State
         dashTime = character.DashTime;
         dashSpeed = character.DashSpeed;
 
-        character.animator.SetFloat("speed", 0);
+        //character.animator.SetFloat("speed", 0);
         character.animator.SetTrigger("dash");
     }
 

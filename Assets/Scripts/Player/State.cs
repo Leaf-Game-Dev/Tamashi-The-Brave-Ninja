@@ -18,6 +18,7 @@ public class State
     public InputAction sprintReleaseAction;
     public InputAction attackAction;
     public InputAction shootAction;
+    public InputAction comboAttackAction;
 
     public InputAction dashAction;
 
@@ -36,6 +37,7 @@ public class State
         dashAction = character.playerInput.actions["Dash"];
         attackAction = character.playerInput.actions["Attack"];
         shootAction = character.playerInput.actions["shoot"];
+        comboAttackAction = character.playerInput.actions["ComboAttack"];
     }
 
     public virtual void Enter()
@@ -61,3 +63,39 @@ public class State
     }
 }
 
+public class EnemyState
+{
+    public Enemy character;
+    public EnemyStateMachine stateMachine;
+
+    protected Vector3 gravityVelocity;
+    protected Vector3 velocity;
+
+    public EnemyState(Enemy _character, EnemyStateMachine _stateMachine)
+    {
+        character = _character;
+        stateMachine = _stateMachine;
+    }
+
+    public virtual void Enter()
+    {
+        //StateUI.instance.SetStateText(this.ToString());
+        Debug.Log("Enter State: Enemy - " + this.ToString());
+    }
+
+    public virtual void HandleInput()
+    {
+    }
+
+    public virtual void LogicUpdate()
+    {
+    }
+
+    public virtual void PhysicsUpdate()
+    {
+    }
+
+    public virtual void Exit()
+    {
+    }
+}

@@ -32,6 +32,12 @@ public class Character : MonoBehaviour
 
     [Header("Attack Settings")]
     public float AttackTimings = .5f;
+    public float TimeForNextAttack = .5f;
+    public float Damagetime = .25f;
+
+    [Header("Chakra Settings")]
+    public int ShurikenCost;
+    public int DashCost;
 
     [HideInInspector] public StateMachine movementSM;
     public StandingState standing;
@@ -39,6 +45,7 @@ public class Character : MonoBehaviour
     public DashState dashing;
     public CrouchingState crouching;
     public LandingState landing;
+    public DamageState damaging;
 
     //public SprintJumpState sprintjumping;
 /*    public CombatState combatting;*/
@@ -48,7 +55,7 @@ public class Character : MonoBehaviour
 
     [HideInInspector]
     public float gravityValue = -9.81f;
-    [HideInInspector]
+    //[HideInInspector]
     public float normalColliderHeight;
     [HideInInspector]
     public CharacterController controller;
@@ -83,10 +90,10 @@ public class Character : MonoBehaviour
         landing = new LandingState(this, movementSM);
         attacking = new AttackState(this, movementSM);
         shooting = new ShurikenState(this, movementSM);
-
+        damaging = new DamageState(this, movementSM);
         movementSM.Initialize(standing);
 
-        normalColliderHeight = controller.height;
+        //normalColliderHeight = controller.height;
         gravityValue *= gravityMultiplier;
     }
 
@@ -110,7 +117,7 @@ public class Character : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x, transform.position.y, Initz);
         //Mesh.rotation = transform.rotation;
-        Mesh.transform.position = transform.position;
+        Mesh.transform.position = new Vector3(transform.position.x, transform.position.y - 0.039f, transform.position.z);
     }
 
 }
