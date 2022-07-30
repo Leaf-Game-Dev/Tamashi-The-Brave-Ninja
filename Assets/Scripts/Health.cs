@@ -33,6 +33,8 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Damaging");
 
+        
+
         currentHealth -= Damage;
         // play damage animation
         

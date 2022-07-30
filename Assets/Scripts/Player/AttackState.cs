@@ -13,7 +13,7 @@ public class AttackState : State
         stateMachine = _stateMachine;
     }
 
-    async public override void Enter()
+     public override void Enter()
     {
         base.Enter();
 
@@ -22,10 +22,10 @@ public class AttackState : State
         character.animator.SetTrigger("Attack");
 
         character.animator.SetInteger("AttackIndex",attackIndex);
-        await Task.Delay((int)(character.AttackTimings * 1000));
-        character.animator.SetTrigger("move");
-        stateMachine.ChangeState(character.standing);
-        //character.StartCoroutine(EndState());
+        //await Task.Delay((int)(character.AttackTimings * 1000));
+        //character.animator.SetTrigger("move");
+        //stateMachine.ChangeState(character.standing);
+        character.StartCoroutine(EndState());
     }
 
     IEnumerator EndState()

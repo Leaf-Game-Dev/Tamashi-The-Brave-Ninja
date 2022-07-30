@@ -9,5 +9,5 @@ AnimatorOverrideController:
   m_Name: Enemy Death Effect
   m_Controller: {fileID: 9100000, guid: c3dfed89d5d568a4da8bfaca1842c71e, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: -203655887218126122, guid: 07318cb3cce8ecd4992359603a824349, type: 3}
-    m_OverrideClip: {fileID: -203655887218126122, guid: 01bdcd11ea03c124f9025de995fc8944, type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: ae0eed2930f4a8c48be28b7c5a5ecaf1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b44ed7d4dcfe2464180e194d605ec471, type: 2}

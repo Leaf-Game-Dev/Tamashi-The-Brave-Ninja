@@ -8,6 +8,11 @@ public class AttackListiner : MonoBehaviour
 
     public Vector3 positionOffset, sizeOffset;
 
+    [Header("Shuriken Settings")]
+    public GameObject ShurikenObject;
+    public Transform SpawnPoint;
+    public float speed;
+
     private void FixedUpdate()
     {
         if (transform.parent.rotation.y >0) 
@@ -45,6 +50,18 @@ public class AttackListiner : MonoBehaviour
         Gizmos.DrawWireCube(new Vector3(transform.position.x + positionOffset.x, transform.position.y + positionOffset.y, transform.position.z + positionOffset.z), new Vector3(sizeOffset.x, sizeOffset.y, sizeOffset.z));
         //Gizmos.color = Color.red;
         //Gizmos.DrawWireCube(new Vector3(transform.position.x, transform.position.y + yOffset, transform.position.z), new Vector3(AttackRange + SizeOffset.x, 1 + SizeOffset.y, 1 + SizeOffset.z));
+    }
+
+    public void ThrowShuriken()
+    {
+        Debug.Log("Attack Start");
+        var enemies = GetEnemies();
+
+  
+        var star = Instantiate(ShurikenObject, SpawnPoint.position, SpawnPoint.rotation);
+
+        star.GetComponent<Rigidbody>().velocity = transform.forward * speed;
+
     }
 
 

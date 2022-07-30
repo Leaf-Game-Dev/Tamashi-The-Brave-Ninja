@@ -11,14 +11,27 @@ public class DamageState : State
         stateMachine = _stateMachine;
     }
 
-    async public override void Enter()
+    public override void Enter()
     {
         base.Enter();
+        /*
+                character.animator.SetTrigger("Damage");
 
+                //await Task.Delay((int)(character.Damagetime * 1000));
+
+                character.animator.SetTrigger("move");
+                stateMachine.ChangeState(character.standing);*/
+
+        character.StartCoroutine(TakeDamage());
+
+    }
+
+    IEnumerator TakeDamage()
+    {
         character.animator.SetTrigger("Damage");
 
-        await Task.Delay((int)(character.Damagetime * 1000));
-
+        //await Task.Delay((int)(character.Damagetime * 1000));
+        yield return new WaitForSeconds(character.Damagetime);
         character.animator.SetTrigger("move");
         stateMachine.ChangeState(character.standing);
     }
@@ -33,15 +46,27 @@ public class EnemyDamageState : EnemyState
         stateMachine = _stateMachine;
     }
 
-    async public override void Enter()
+    public override void Enter()
     {
         base.Enter();
+        /*
+                character.animator.SetTrigger("Damage");
 
-        character.StopAllCoroutines();
+                //await Task.Delay((int)(character.Damagetime * 1000));
+
+                character.animator.SetTrigger("move");
+                stateMachine.ChangeState(character.standing);*/
+
+        character.StartCoroutine(TakeDamage());
+
+    }
+
+    IEnumerator TakeDamage()
+    {
         character.animator.SetTrigger("Damage");
 
-        await Task.Delay((int)(character.Damagetime * 1000));
-
+        //await Task.Delay((int)(character.Damagetime * 1000));
+        yield return new WaitForSeconds(character.Damagetime);
         character.animator.SetTrigger("Move");
         stateMachine.ChangeState(character.standing);
     }

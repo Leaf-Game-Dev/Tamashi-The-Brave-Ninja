@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 3801996491536006813}
   m_Layer: 11
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1507,7 +1507,7 @@ Transform:
   m_Children:
   - {fileID: 2958195930263803459}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!143 &2958195929994256863
 CharacterController:
@@ -1896,6 +1896,9 @@ MonoBehaviour:
   DamageAmount: 10
   positionOffset: {x: -0.74, y: 0.9, z: 0}
   sizeOffset: {x: 1.69, y: 1.78, z: 2.78}
+  ShurikenObject: {fileID: 0}
+  SpawnPoint: {fileID: 0}
+  speed: 0
 --- !u!1001 &2958195929086815980
 PrefabInstance:
   m_ObjectHideFlags: 0
