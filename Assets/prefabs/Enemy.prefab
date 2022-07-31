@@ -1556,9 +1556,9 @@ MonoBehaviour:
   AttackWaitTimings: 1
   Damagetime: 0.25
   RunRange: 5.08
-  AttackRange: 1.5
+  AttackRange: -2.84
   stopDistance: 1
-  SizeOffset: {x: 0.87, y: 0.92, z: 2.34}
+  SizeOffset: {x: 5.97, y: 0.92, z: 2.34}
   yOffset: 0.85
 --- !u!114 &3801996491536006813
 MonoBehaviour:
@@ -1894,8 +1894,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectLayer: 8
   DamageAmount: 10
+  HitEffect: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
   positionOffset: {x: -0.74, y: 0.9, z: 0}
   sizeOffset: {x: 1.69, y: 1.78, z: 2.78}
+  effectOffset: {x: 0, y: 1, z: 0}
   ShurikenObject: {fileID: 0}
   SpawnPoint: {fileID: 0}
   speed: 0

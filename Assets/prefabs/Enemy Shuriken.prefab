@@ -157,8 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectLayer: 0
   DamageAmount: 0
+  HitEffect: {fileID: 0}
   positionOffset: {x: 0, y: 0, z: 0}
   sizeOffset: {x: 0, y: 0, z: 0}
+  effectOffset: {x: 0, y: 0, z: 0}
   ShurikenObject: {fileID: 118914541152229342, guid: b5977b233bbd9024fb9f0f41bb1db7ae, type: 3}
   SpawnPoint: {fileID: 1303618911851510204}
   speed: 20
@@ -399,7 +401,7 @@ MonoBehaviour:
   velocityDampTime: 0.1
   rotationDampTime: 0.2
   airControl: 0
-  AttackTimings: 0.5
+  AttackTimings: 1
   AttackWaitTimings: 1
   Damagetime: 0.25
   RunRange: 5.5

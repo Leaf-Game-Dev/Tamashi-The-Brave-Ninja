@@ -5,8 +5,9 @@ using UnityEngine;
 public class AttackListiner : MonoBehaviour
 {
     public int detectLayer,DamageAmount;
-
+    public GameObject HitEffect;
     public Vector3 positionOffset, sizeOffset;
+    public Vector3 effectOffset;
 
     [Header("Shuriken Settings")]
     public GameObject ShurikenObject;
@@ -15,10 +16,14 @@ public class AttackListiner : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.parent.rotation.y >0) 
-            positionOffset = new Vector3( Mathf.Abs(positionOffset.x), positionOffset.y, positionOffset.z);
-        else if(transform.parent.rotation.y <0)
-            positionOffset = new Vector3( -Mathf.Abs(positionOffset.x), positionOffset.y, positionOffset.z);
+        if (transform.parent.rotation.y > 0)
+        {
+            positionOffset = new Vector3(Mathf.Abs(positionOffset.x), positionOffset.y, positionOffset.z);
+        }
+        else if (transform.parent.rotation.y < 0)
+        {
+            positionOffset = new Vector3(-Mathf.Abs(positionOffset.x), positionOffset.y, positionOffset.z);
+        }
     }
 
     public void HandleAttack(int effectID)
@@ -29,6 +34,13 @@ public class AttackListiner : MonoBehaviour
 
         foreach (var enemy in enemies)
         {
+            if (HitEffect)
+            {
+                var newEffect = Instantiate(HitEffect, enemy.transform.position+ effectOffset, Quaternion.identity);
+                newEffect.transform.localScale *= 3;
+                Destroy(newEffect, 2);
+            }
+
             enemy.GetComponent<Health>().DealDamage(DamageAmount);
         }
 

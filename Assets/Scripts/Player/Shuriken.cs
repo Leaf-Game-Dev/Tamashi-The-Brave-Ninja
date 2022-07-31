@@ -6,12 +6,16 @@ public class Shuriken : MonoBehaviour
 {
     public string TargetTag="Enemy";
     public int damageAmount;
+    public GameObject Effect;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals(TargetTag))
         {
             other.GetComponent<Health>()?.DealDamage(damageAmount);
+            var effect = Instantiate(Effect,transform.position,transform.rotation);
+            effect.transform.localScale *= 3;
+            Destroy(effect, 2);
             Destroy(gameObject);
         }
     }

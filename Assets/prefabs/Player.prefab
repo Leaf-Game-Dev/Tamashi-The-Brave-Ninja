@@ -3428,8 +3428,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectLayer: 11
   DamageAmount: 20
+  HitEffect: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
   positionOffset: {x: 0.65, y: 0.9, z: 0}
   sizeOffset: {x: 1.36, y: 1.78, z: 2.78}
+  effectOffset: {x: 0, y: 1, z: 0}
   ShurikenObject: {fileID: 118914541152229342, guid: b3588815d9a3bc64fab043549d2c454d, type: 3}
   SpawnPoint: {fileID: 4797239809369043269}
   speed: 10
