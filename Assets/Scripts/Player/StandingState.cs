@@ -291,7 +291,8 @@ public class EnemyStandState : EnemyState
             character.transform.rotation = Quaternion.LookRotation(velocity);//Quaternion.Slerp(character.transform.rotation, Quaternion.LookRotation(velocity),character.rotationDampTime);
         }
         // detect to attack
-        CheckToAttack();
+        if(target)
+            CheckToAttack();
 
     }
 

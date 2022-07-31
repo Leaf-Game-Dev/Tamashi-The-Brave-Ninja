@@ -54,4 +54,15 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void Heal(int amount){
+	currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
+        if (HealthSlider)
+        {
+            HealthSlider.value += amount;
+
+        }
+    }
+
 }

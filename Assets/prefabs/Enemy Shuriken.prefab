@@ -402,7 +402,7 @@ MonoBehaviour:
   rotationDampTime: 0.2
   airControl: 0
   AttackTimings: 1
-  AttackWaitTimings: 1
+  AttackWaitTimings: 2
   Damagetime: 0.25
   RunRange: 5.5
   AttackRange: -0.56

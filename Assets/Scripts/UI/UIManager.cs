@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     [Header("Chakra UI")]
     [SerializeField] Slider chakraSlider;
     [SerializeField] int maxChakra;
+    [Header("Coin UI")]
+    [SerializeField] TMPro.TMP_Text coinText;
 
     private void Awake()
     {
@@ -47,6 +49,13 @@ public class UIManager : MonoBehaviour
     void OnChakrasUpdated()
     {
 
+    }
+
+    // coin
+
+    public void addCoinCount()
+    {
+        coinText.text = int.Parse(coinText.text) + 1+"";
     }
 
 }
