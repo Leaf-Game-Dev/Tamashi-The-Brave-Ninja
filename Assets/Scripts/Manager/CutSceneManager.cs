@@ -33,7 +33,12 @@ public class CutSceneManager : MonoBehaviour
         }
         else
         {
-            sceneLoader.LoadScene("StartCutscene");
+            sceneLoader.LoadScene("Menu");
         }
     }
+
+    public void Skip(){
+	sceneLoader.LoadScene("Level1");
+    }
+
 }

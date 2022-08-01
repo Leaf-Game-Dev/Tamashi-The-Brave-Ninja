@@ -21,7 +21,7 @@ public class ShurikenState : State
 
     IEnumerator EndState()
     {
-        yield return new WaitForSeconds(character.AttackTimings);
+        yield return new WaitForSeconds(character.ShurikenTime );
         character.animator.SetTrigger("move");
         stateMachine.ChangeState(character.standing);
 

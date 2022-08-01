@@ -18,7 +18,9 @@ public static class SoundManager
         Slash,
         coin,
         Health,
-        Shot
+        Shot,
+	Button,
+TextTyping
     }
 
     public static void PlaySound(Sound sound,float volume = 1)

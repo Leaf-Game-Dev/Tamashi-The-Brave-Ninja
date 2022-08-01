@@ -9,10 +9,12 @@ public class MenuManager : MonoBehaviour
     public void OnStoryClicked()
     {
         sceneLoader.LoadScene("StartCutscene");
+SoundManager.PlaySound(SoundManager.Sound.Button, transform.position, 1f);
     }
 
     public void OnExitClicked()
     {
+SoundManager.PlaySound(SoundManager.Sound.Button, transform.position, 1f);
         Application.Quit();
     }
 

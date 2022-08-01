@@ -35,6 +35,7 @@ public class Character : MonoBehaviour
     public float AttackTimings = .5f;
     public float TimeForNextAttack = .5f;
     public float Damagetime = .25f;
+    public float ShurikenTime = 0.5f;
 
     [Header("Chakra Settings")]
     public int ShurikenCost;
@@ -105,13 +106,19 @@ public class Character : MonoBehaviour
 
         movementSM.currentState.LogicUpdate();
 	}
+else{
+//animator.ResetTrigger("move");
+}
+
     }
 
     private void FixedUpdate()
     {
 	if(canMove){
-        movementSM.currentState.PhysicsUpdate();
-	}
+movementSM.currentState.PhysicsUpdate();
+		
+}
+	
         Constrains();
 	
     }

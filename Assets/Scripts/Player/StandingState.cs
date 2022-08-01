@@ -75,7 +75,7 @@ public class StandingState: State
             currentAttackTime = 0;
         }
 
-        if(shootAction.triggered && GroundCheck)
+        if(shootAction.triggered && GroundCheck && currentAttackTime >= timeForNextAttack)
         {
             if (UIManager.instance.ConsumeChakras(character.ShurikenCost))
             {

@@ -15,7 +15,7 @@ public class Shuriken : MonoBehaviour
             other.GetComponent<Health>()?.DealDamage(damageAmount);
             var effect = Instantiate(Effect,transform.position,transform.rotation);
             effect.transform.localScale *= 3;
-            SoundManager.PlaySound(SoundManager.Sound.Shot, 0.2f);
+            SoundManager.PlaySound(SoundManager.Sound.Shot, 1f);
 
             Destroy(effect, 2);
             Destroy(gameObject);

@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
     
     public Character character;
     public Enemy enemy;
+    public bool IsPlayer;
 
     public Slider HealthSlider;
     public GameObject DeathEffect;
@@ -36,7 +37,7 @@ public class Health : MonoBehaviour
     {
         Debug.Log("Damaging");
 
-        
+        if(IsPlayer) ScreenCamShake.Instance.ShakeCamera(2, 0.2f);
 
         currentHealth -= Damage;
         // play damage animation

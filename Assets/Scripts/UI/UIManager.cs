@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
 
     public static UIManager instance;
 
-    
+    public SceneLoader loader;
 
 
     [Header("Chakra UI")]
@@ -16,6 +17,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] int maxChakra;
     [Header("Coin UI")]
     [SerializeField] TMPro.TMP_Text coinText;
+    public float ShowTime;
+    public GameObject GameOverObject;
 
     private void Awake()
     {
@@ -56,6 +59,25 @@ public class UIManager : MonoBehaviour
     public void addCoinCount()
     {
         coinText.text = int.Parse(coinText.text) + 1+"";
+    }
+
+    public void OnExit(){
+    	loader.LoadScene("Menu");
+SoundManager.PlaySound(SoundManager.Sound.Button, transform.position, 1f);
+
+    }
+
+    public void OnRestart(){
+        loader.LoadScene(SceneManager.GetActiveScene().name);
+SoundManager.PlaySound(SoundManager.Sound.Button, transform.position, 1f);
+    }
+
+    public void ShowGameOver(){
+	Invoke(nameof(ActiveWindow),ShowTime);
+    }
+
+    public void ActiveWindow(){
+	    GameOverObject.SetActive(true);
     }
 
 }

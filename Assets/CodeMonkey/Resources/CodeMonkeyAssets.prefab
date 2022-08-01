@@ -76,6 +76,20 @@ MonoBehaviour:
     audioClips:
     - {fileID: 8300000, guid: 7dffebd7fc90c1a47929db2919ed859e, type: 3}
     - {fileID: 8300000, guid: 7dffebd7fc90c1a47929db2919ed859e, type: 3}
+  - sound: 8
+    audioClips:
+    - {fileID: 8300000, guid: 6dc07244f73db38409f32bdff88bdf24, type: 3}
+    - {fileID: 8300000, guid: 6dc07244f73db38409f32bdff88bdf24, type: 3}
+  - sound: 7
+    audioClips:
+    - {fileID: 8300000, guid: f999c2d1e4232e946ad8cfadea421b64, type: 3}
+    - {fileID: 8300000, guid: f999c2d1e4232e946ad8cfadea421b64, type: 3}
+  - sound: 9
+    audioClips:
+    - {fileID: 8300000, guid: d954e37d21bcee547b7caffd41f530f1, type: 3}
+    - {fileID: 8300000, guid: 8a4ab2b8bb70ecc4aaa9ebb16f3f2d23, type: 3}
+    - {fileID: 8300000, guid: 672003178c787a74c921765576ef72b7, type: 3}
+    - {fileID: 8300000, guid: 74c0e39978a528f4c9c346dcf6b41839, type: 3}
   s_White: {fileID: 21300000, guid: 170577bce7cbda144b82578f81308d23, type: 3}
   s_Circle: {fileID: 21300000, guid: a0e35f6b808bb7447826cc6c69ffe448, type: 3}
   m_White: {fileID: 2100000, guid: 7d5e8e2c082a4c44a9abd7d650cf0a15, type: 2}
