@@ -4566,6 +4566,7 @@ MonoBehaviour:
   JumpColliderHeight: 1.35
   LandDelay: 0
   GroundCheckDisnatce: 0.3
+  canMove: 0
   speedDampTime: 0.1
   velocityDampTime: 0.1
   rotationDampTime: 0.2
@@ -4573,10 +4574,10 @@ MonoBehaviour:
   DashSpeed: 15
   DashTime: 0.25
   AttackTimings: 0.25
-  TimeForNextAttack: 0.5
+  TimeForNextAttack: 0.2
   Damagetime: 0.25
   ShurikenCost: 5
-  DashCost: 20
+  DashCost: 5
   gravityValue: -9.81
   normalColliderHeight: 3
   controller: {fileID: 0}
@@ -4603,6 +4604,9 @@ MonoBehaviour:
   enemy: {fileID: 0}
   HealthSlider: {fileID: 0}
   DeathEffect: {fileID: 4223830282570348943, guid: 008f6f72d6e365242baaa28038747c7c, type: 3}
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7159680946618416890
 GameObject:
   m_ObjectHideFlags: 0

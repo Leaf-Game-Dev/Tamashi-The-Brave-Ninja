@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
     public float JumpColliderHeight = 1.35f;
     public float LandDelay = 0.75f;
     public float GroundCheckDisnatce = 0.3f;
+    public bool canMove;
 
 
     [Header("Animation Smoothing")]
@@ -99,18 +100,20 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
+	if(canMove){
         movementSM.currentState.HandleInput();
 
         movementSM.currentState.LogicUpdate();
-
+	}
     }
 
     private void FixedUpdate()
     {
+	if(canMove){
         movementSM.currentState.PhysicsUpdate();
-
+	}
         Constrains();
-
+	
     }
 
     private void Constrains()

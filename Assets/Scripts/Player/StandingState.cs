@@ -56,7 +56,7 @@ public class StandingState: State
     public override void HandleInput()
     {
         base.HandleInput();
-
+	if(character.canMove){
         if (jumpAction.triggered && timePassed > landingTime && GroundCheck)
         {
             jump = true;
@@ -93,7 +93,7 @@ public class StandingState: State
 
         //velocity = velocity.x * character.cameraTransform.right.normalized;// + velocity.z * character.cameraTransform.forward.normalized;
         velocity.y = 0f;
-     
+     	}
     }
     
     public override void LogicUpdate()

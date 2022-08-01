@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Health : MonoBehaviour
 
     public Slider HealthSlider;
     public GameObject DeathEffect;
+
+    public UnityEvent OnDie;
 
     private void Start()
     {
@@ -50,7 +53,8 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
         if(currentHealth == 0)
         {
-            if(DeathEffect) Instantiate(DeathEffect, transform.position, transform.rotation);
+            OnDie?.Invoke();
+            if (DeathEffect) Instantiate(DeathEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
