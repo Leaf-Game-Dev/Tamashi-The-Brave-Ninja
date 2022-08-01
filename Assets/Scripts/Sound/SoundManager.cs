@@ -11,7 +11,14 @@ public static class SoundManager
 
     public enum Sound
     {
-        FootStep
+        FootStep,
+        Dash,
+        Shoot,
+        Punch,
+        Slash,
+        coin,
+        Health,
+        Shot
     }
 
     public static void PlaySound(Sound sound,float volume = 1)

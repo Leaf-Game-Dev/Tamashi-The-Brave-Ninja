@@ -61,6 +61,8 @@ public class Health : MonoBehaviour
 
     public void Heal(int amount){
 	currentHealth += amount;
+        SoundManager.PlaySound(SoundManager.Sound.Health, 0.2f);
+
         currentHealth = Mathf.Clamp(currentHealth, 0, MaxHealth);
         if (HealthSlider)
         {

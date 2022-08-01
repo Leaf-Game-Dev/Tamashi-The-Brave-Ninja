@@ -58,7 +58,11 @@ public class JumpingState:State
 
         if (grounded)
 		{
-            stateMachine.ChangeState(character.landing);
+            character.animator.SetTrigger("move");
+            stateMachine.ChangeState(character.standing);
+
+            SoundManager.PlaySound(SoundManager.Sound.FootStep, 0.1f);
+            //stateMachine.ChangeState(character.landing);
         }
 
         if (jumpAction.triggered && !doublejumped)

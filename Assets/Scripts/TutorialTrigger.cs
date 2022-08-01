@@ -12,8 +12,8 @@ public class TutorialTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider col){
 	    player.canMove = false;
-        if(player.animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
-            player.animator.SetTrigger("land");
+        /*if(player.animator.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+            player.animator.SetTrigger("land");*/
         player.animator.SetTrigger("move");
         player.animator.SetFloat("speed", 0);
         player.movementSM.ChangeState(player.standing);

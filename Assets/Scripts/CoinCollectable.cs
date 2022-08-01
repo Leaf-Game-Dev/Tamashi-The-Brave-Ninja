@@ -14,6 +14,8 @@ public class CoinCollectable : MonoBehaviour
             effect.transform.localScale *= 2;
             Destroy(effect, 2);
             UIManager.instance.addCoinCount();
+            SoundManager.PlaySound(SoundManager.Sound.coin, transform.position, 0.2f);
+
             Destroy(gameObject);
         }
     }

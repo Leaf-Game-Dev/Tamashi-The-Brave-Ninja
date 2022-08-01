@@ -14,6 +14,13 @@ public class AttackListiner : MonoBehaviour
     public Transform SpawnPoint;
     public float speed;
 
+    Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     private void FixedUpdate()
     {
         if (transform.parent.rotation.y > 0)
@@ -72,9 +79,46 @@ public class AttackListiner : MonoBehaviour
   
         var star = Instantiate(ShurikenObject, SpawnPoint.position, SpawnPoint.rotation);
 
+        star.transform.position = new Vector3(star.transform.position.x,star.transform.position.y, transform.position.z);
+
         star.GetComponent<Rigidbody>().velocity = transform.forward * speed;
 
     }
 
+    // sounds
+    public void Step()
+    {
+        var speed = anim.GetFloat("speed");
+        if(speed >= 0.5f)  SoundManager.PlaySound(SoundManager.Sound.FootStep, 0.1f);
+    }
+
+    public void JumpStep()
+    {
+        SoundManager.PlaySound(SoundManager.Sound.FootStep, 0.4f);
+    }
+
+    public void Dash()
+    {
+        SoundManager.PlaySound(SoundManager.Sound.Dash, 0.4f);
+    }
+
+    public void Shoot()
+    {
+        SoundManager.PlaySound(SoundManager.Sound.Shoot,transform.position, 0.2f);
+    }
+
+    public void Punch()
+    {
+        var enemies = GetEnemies();
+        if(enemies.Length!=0 )
+            SoundManager.PlaySound(SoundManager.Sound.Punch, transform.position, 0.4f);
+    }
+
+
+    public void Slash()
+    {
+
+            SoundManager.PlaySound(SoundManager.Sound.Slash, transform.position, 0.4f);
+    }
 
 }
