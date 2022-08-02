@@ -8565,13 +8565,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 6
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":true,"xPos":370,"yPos":115},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi
-    I am Tamashi, A ninja","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":275,"yPos":305},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Jump
-    - tap space, Double jump -double tap space","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":413},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Dash
-    - press ctrl while running. Dashing Consumes mana","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":275,"yPos":524},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Attack
-    - left click to punch and kick\nShuriken - Press Q","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":false,"xPos":582,"yPos":226},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Use
-    A and D to Move horizontally","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 9
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":true,"xPos":175,"yPos":18},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"you
+    are a failure.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"a
+    voice","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":148,"yPos":304},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"press
+    space to jump.\npress space twice to double jump.","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":151,"yPos":412},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"press
+    ctrl to dash. dashing uses mana.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":148,"yPos":523},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"press
+    left click to melee attack.press Q to throw shurikens. throwing shurikens uses
+    mana.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":false,"xPos":455,"yPos":225},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Use
+    A and D to Move.\n","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":447.5,"yPos":72},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    am NOT!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":128.5,"yPos":147},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"you
+    are a diagrace to our family.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"a
+    voice","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-130.5,"yPos":207},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"
+    NO I AM NOT!! I WILL SHOW YOU!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
@@ -8582,6 +8588,9 @@ MonoBehaviour:
   - {fileID: 1486673316}
   - {fileID: 1486673315}
   - {fileID: 1486673318}
+  - {fileID: 1486673321}
+  - {fileID: 1486673320}
+  - {fileID: 1486673319}
   ContinueFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   Event:
@@ -8775,35 +8784,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 13
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":237.5,"yPos":146},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Brother
-    ! I didnt expected see you here.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":242.5,"yPos":279},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    was watching you train, I was disappointed","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":241,"yPos":401},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"you
-    are slow and weak. you do not belong to your family. ","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":239,"yPos":515},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"How
-    can you say that I was training every day to prove you and father.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":238,"yPos":626},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    know that, but it is still not enough. ","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":475,"yPos":151},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"If
-    u want to prove to us that ur are capable ninja,","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":472,"yPos":269},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"There
-    are groups of rouge ninjas in forest and caves.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":471,"yPos":391},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Defeat
-    them and prove your worthiness","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":466,"yPos":509},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
-    it ? ha. I will beat them quiky and show you how powerfull I am.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":470,"yPos":625},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Don''t
-    let your strength blind you.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":700,"yPos":154},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
-    luck brother. may you succed.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 26
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":true,"xPos":281.5,"yPos":104},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"
+    brother?! what are you doing here?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":232},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"
+    dont you have other things to do than come visit your ''useless'' brother? ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":353},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"i
+    dont hate you brother... and i am here to help you.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":536,"yPos":101},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"HA!
+    help me? how are you gonna do that?","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":527,"yPos":230},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"brother,
+    listen, if you want to prove yourself in the eyes of others i have a plan. but
+    its risky...\r\n","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":523,"yPos":345},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"a
+    plan? wat plan?","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":762,"yPos":90},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"we
+    have gotten info that the rouge ninjas are planning to attack our village soon","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":760,"yPos":224},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"they
+    are starting to setup camp in the <b>forest<\/b> and the <b>caves<\/b>. you have
+    to defeate them.\r\n","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":755,"yPos":333},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"oh!
+    this is it! now its my turn to shine! i will beat them up in no time.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":765,"yPos":453},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"dont
+    let your strength blind you brother... goodluck.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Manji","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   NodeSerializedDataList:
   - {fileID: 793446724}
-  - {fileID: 793446723}
-  - {fileID: 793446722}
-  - {fileID: 793446721}
-  - {fileID: 793446720}
-  - {fileID: 793446719}
-  - {fileID: 793446718}
-  - {fileID: 793446717}
-  - {fileID: 793446716}
-  - {fileID: 793446715}
-  - {fileID: 793446714}
+  - {fileID: 793446733}
+  - {fileID: 793446732}
+  - {fileID: 793446731}
+  - {fileID: 793446730}
+  - {fileID: 793446729}
+  - {fileID: 793446728}
+  - {fileID: 793446727}
+  - {fileID: 793446726}
+  - {fileID: 793446725}
   ContinueFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   Event:
@@ -26248,16 +26257,15 @@ GameObject:
   m_Component:
   - component: {fileID: 793446713}
   - component: {fileID: 793446724}
-  - component: {fileID: 793446723}
-  - component: {fileID: 793446722}
-  - component: {fileID: 793446721}
-  - component: {fileID: 793446720}
-  - component: {fileID: 793446719}
-  - component: {fileID: 793446718}
-  - component: {fileID: 793446717}
-  - component: {fileID: 793446716}
-  - component: {fileID: 793446715}
-  - component: {fileID: 793446714}
+  - component: {fileID: 793446733}
+  - component: {fileID: 793446732}
+  - component: {fileID: 793446731}
+  - component: {fileID: 793446730}
+  - component: {fileID: 793446729}
+  - component: {fileID: 793446728}
+  - component: {fileID: 793446727}
+  - component: {fileID: 793446726}
+  - component: {fileID: 793446725}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -26280,196 +26288,6 @@ Transform:
   m_Father: {fileID: 264671011}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &793446714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 12
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 11
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 9
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 8
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 7
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 6
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 5
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 4
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 3
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &793446723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793446712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 1
-  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &793446724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26486,6 +26304,177 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 25
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 24
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 23
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 22
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 21
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 20
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 19
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 18
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: abaaecc7b174371418035a467a1a7557, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &793446733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793446712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 17
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
   Audio: {fileID: 0}
@@ -43395,7 +43384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 1
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":324,"yPos":193},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Press
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":434.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Press
     ctrl to Dash. dashing consumes mana","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Tamashi","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -49873,6 +49862,9 @@ GameObject:
   - component: {fileID: 1486673316}
   - component: {fileID: 1486673315}
   - component: {fileID: 1486673318}
+  - component: {fileID: 1486673321}
+  - component: {fileID: 1486673320}
+  - component: {fileID: 1486673319}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -49912,7 +49904,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1486673315
 MonoBehaviour:
@@ -49931,7 +49923,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 3
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1486673316
 MonoBehaviour:
@@ -49950,7 +49942,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1486673317
 MonoBehaviour:
@@ -49969,7 +49961,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
-  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!114 &1486673318
 MonoBehaviour:
@@ -49987,6 +49979,63 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 5
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1486673319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486673312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1486673320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486673312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 7
+  TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &1486673321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486673312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 6
   TMPFont: {fileID: 11400000, guid: 5f9dba1bd1a36b74e86b6aae735d1d37, type: 2}
   Icon: {fileID: 21300000, guid: 0d495a49ada3d5b49b6acc4e63afe928, type: 3}
   Audio: {fileID: 0}
@@ -62258,7 +62307,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824063764}
-  m_LocalRotation: {x: 0.17762333, y: -0.000000016932773, z: 0.0000000030562544, w: 0.98409855}
+  m_LocalRotation: {x: 0.17762333, y: 0.000000016932775, z: -0.0000000030562546, w: 0.98409855}
   m_LocalPosition: {x: -0.51, y: 4.5089993, z: -8.9489975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -72121,7 +72170,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102636894}
-  m_LocalRotation: {x: 0.17762333, y: -0.000000016932773, z: 0.0000000030562544, w: 0.98409855}
+  m_LocalRotation: {x: 0.17762333, y: 0.000000016932775, z: -0.0000000030562546, w: 0.98409855}
   m_LocalPosition: {x: -0.51, y: 4.5089993, z: -8.9489975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -72146,7 +72195,7 @@ MonoBehaviour:
   _horizontal: 16
   _verical: 9
   _duration: 1
-  _fadeColour: {r: 0, g: 0, b: 0, a: 1}
+  _fadeColour: {r: 0, g: 0, b: 0, a: 0}
   _fadeTexture: {fileID: 2800000, guid: fb41630f2eae61e47a5f69b5477b1cd2, type: 3}
   _offset: {x: 0, y: 0}
 --- !u!1001 &2103929290
